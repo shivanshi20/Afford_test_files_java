@@ -5,7 +5,7 @@ import java.util.*;
 
 
 class Solution {
-static  boolean isValid(String input) {
+public  boolean isValid(String input) {
 
 Map<Character, Character> map = new HashMap<>();
     map.put('<', '>');
@@ -30,7 +30,9 @@ Map<Character, Character> map = new HashMap<>();
 
 public class User{
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String brackets = sc.nextLine();
 		Solution obj = new Solution();
-		obj.isValid();
+		obj.isValid(brackets);
 	}
 }
